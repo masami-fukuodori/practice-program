@@ -7,7 +7,6 @@ layout = [
   [sg.Text('MEMO')],
   [sg.Text('メモ入力', size=(15,1)), sg.InputText('ここに入力')],
   [sg.Button('Resister')],
-  [sg.Button('Cancel')],
   [sg.Button('Save')]
   ]
 
@@ -24,7 +23,7 @@ def show_window():
   # イベントループ
   while True:
     event, values = win.read()
-    if event == sg.WINDOW_CLOSED or event == 'Cancel':
+    if event == sg.WINDOW_CLOSED:
           break
     elif event == 'Resister': 
         value = print_memo(values, memo)
@@ -39,8 +38,5 @@ def print_memo(values, memo):
       sg.popup(values[0], ' '.join(memo))
       
       return values[0]
-
-def resiater(values):
-      pass
 
 show_window()
