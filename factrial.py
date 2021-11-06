@@ -4,11 +4,12 @@ def factrial(n):
     else:
         return factrial(n-1)*n
 
-def main():
-    n = 5
+def main(n):
     fac = factrial(n)
-    print("The factrial of 5 is :",fac)
+    print(f"The factrial of {n} is :",fac)
 
 if __name__ == '__main__':
     print('factrial')
-    main()
+    print('階乗計算：再帰関数')
+    n = int(input('数字を入力'))
+    main(n)
