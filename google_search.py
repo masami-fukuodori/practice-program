@@ -44,7 +44,8 @@ def show_window():
     ]
 
     #表示
-    win = sg.Window('Google Search App', layout=layout, location=(0,0), keep_on_top=True, return_keyboard_events=True)#keep_on_top=True→ウインドウが一番上にくる。return_keyboard_events→キーボード入力が有効　参照https://qiita.com/melka-blue/items/33c89a62c2392bbbd450
+    win = sg.Window('Google Search App', layout=layout, location=(0,0), keep_on_top=True, return_keyboard_events=True)
+    #keep_on_top=True→ウインドウが一番上にくる。return_keyboard_events→キーボード入力が有効　参照https://qiita.com/melka-blue/items/33c89a62c2392bbbd450
     
     # イベントループ
     while True:
